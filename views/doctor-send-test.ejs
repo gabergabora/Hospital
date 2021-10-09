@@ -1,0 +1,13 @@
+<%- include("layout/header") -%>
+
+<center>
+  <form action="/doctor/data/<%= code%>/lab" method="POST">
+  <div class="doctor-lab">
+      <textarea name="name"></textarea>
+      <button class="btn btn-success">ارسال</button>
+  </div>
+      
+  </form>
+</center>
+
+<%- include("layout/footer") -%>

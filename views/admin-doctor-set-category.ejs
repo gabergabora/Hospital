@@ -1,0 +1,33 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">اسم الطبيب</th>
+      <th scope="col">التخصص</th>
+      <th scope="col">تاريخ الولادة</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.DoctorCategort%></td>
+      <td><%= data.born%></td>
+    </tr>
+  </tbody>
+</table>
+
+<center>
+  <form action="/admin/doctors/<%= data.id%>/add?_method=PUT" method="POST">
+      <select name="cate" class="form-select container" aria-label="Default select example">
+  <option selected>اختار التخصص</option>
+  <% category.forEach(cate => { %>
+    <option><%= cate.name%></option>
+  <% }) %>
+</select>
+<br>
+<button class="btn btn-success">تاكيد</button>
+  </form>
+</center>
+
+<%- include("layout/footer") -%>

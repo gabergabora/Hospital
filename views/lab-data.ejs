@@ -1,0 +1,32 @@
+<%- include("layout/header") -%>
+
+
+<table class="lab-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Code</th>
+      <th scope="col">Blood type</th>
+      <th scope="col">Born</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.username%></td>
+      <td><%= data.blood_type%></td>
+      <td><%= data.born%></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div>
+    <div class="lab-user-data">
+    <div>
+        <button onclick="window.location.href='/lab/data/<%= data.username %>/pending'">الفحوصات المطلوبة</button>
+        <button onclick="window.location.href='/lab/data/<%= data.username %>/result'">ارسال نتيجة الفحص</button>
+    </div>
+</div>
+</div>
+<%- include("layout/footer") -%>

@@ -1,0 +1,32 @@
+<%- include("layout/header") -%>
+
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Code</th>
+      <th scope="col">Blood type</th>
+      <th scope="col">Born</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.username%></td>
+      <td><%= data.blood_type%></td>
+      <td><%= data.born%></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="doctor-user-data">
+    <div>
+        <button onclick="window.location.href='/doctor/data/<%= data.username %>/adddrugs'">وصف دواء</button>
+        <button onclick="window.location.href='/doctor/data/<%= data.username %>/drugs-history'">سجل الادوية</button>
+        <button onclick="window.location.href='/doctor/data/<%= data.username %>/lab'">ارسال فحوصات</button>
+        <button onclick="window.location.href='/doctor/data/<%= data.username %>/lab-history'">سجل الفحوصات</button>
+    </div>
+</div>
+
+<%- include("layout/footer") -%>

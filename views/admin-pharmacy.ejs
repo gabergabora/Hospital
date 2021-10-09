@@ -1,0 +1,20 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">اسم الصيدلي</th>
+      <th scope="col">تاريخ الولادة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% pharmacy.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.born%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

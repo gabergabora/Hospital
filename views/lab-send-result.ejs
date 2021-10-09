@@ -1,0 +1,25 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">الفحص</th>
+      <th scope="col">اسم الطبيب</th>
+      <th scope="col">النتيجة</th>
+      <th scope="col">ارسال او تعديل النتيجة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% test.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.doctor%></td>
+      <td><%= data.result%></td>
+      <td><button onclick="window.location.href='/lab/data/<%= data.username%>/result/<%= data.id%>'"
+       class="btn btn-success">ارسال او تعديل النتيجة</button></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

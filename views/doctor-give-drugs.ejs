@@ -1,0 +1,34 @@
+<%- include("layout/header") -%>
+
+<select onchange="if (this.value) window.location.href=this.value" class="pharmacy-filter">
+<option selected>البحث حسب الاقسام</option>
+      <option value="/doctor/data/<%= code %>/adddrugs">All Drugs</option>
+      <%cat.forEach(cate=> {%>
+        <option value="/doctor/data/<%= code%>/adddrugs/filter/<%= cate.name%>">
+          <%= cate.name%>
+        </option>
+        <%})%>
+    </select>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">Drug</th>
+      <th scope="col">category</th>
+      <th scope="col">Add</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% drugs.forEach(drug => { %>
+      <tr>
+      <th scope="row"><%= drug.name%></th>
+      <td><%= drug.category%></td>
+      <td><form action="/doctor/data/<%= code%>/adddrugs/<%= drug.id%>" method="POST">
+          <button class="btn btn-success">Add</button>
+      </form></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

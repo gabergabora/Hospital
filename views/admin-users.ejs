@@ -1,0 +1,42 @@
+<%- include("layout/header") -%>
+
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Born</th>
+      <th scope="col">Doctor</th>
+      <th scope="col">Pharmacy</th>
+      <th scope="col">Lab</th>
+      <th scope="col">secretary</th>
+      <th scope="col">Information</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.born%></td>
+      <td><form action="/admin/admin-users/<%= data.id %>/doctor?_method=PUT" method="POST">
+          <button type="submit" onclick="window.location.href='/admin/admin-users/<%= data.id %>/doctor'" class="btn btn-primary">Doctor</button>
+      </form></td>
+      <td><form action="/admin/admin-users/<%= data.id %>/pharmacy?_method=PUT" method="POST">
+          <button type="submit" class="btn btn-success">Pharmacy</button>
+      </form></td>
+      <td><form action="/admin/admin-users/<%= data.id %>/lab?_method=PUT" method="POST">
+        <button class="btn btn-warning">Lab</button>
+      </form></td>
+      <td><button type="button" class="btn btn-info">Secretary</button></td>
+      <td><form action="/admin/admin-users/<%= data.id %>/info?_method=PUT" method="POST">
+          <button type="submit" onclick="window.location.href='/admin/admin-users/<%= data.id %>/info'" class="btn btn-dark">Information</button>
+      </form></td>
+      <td><form action="/admin/admin-users/<%= data.id%>/delete?_method=DELETE" method="POST">
+          <button type="submit" onclick="window.location.href='/admin/admin-users/<%= data.id %>/delete'" class="btn btn-danger">Delete</button>
+      </form></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

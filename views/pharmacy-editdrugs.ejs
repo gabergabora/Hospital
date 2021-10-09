@@ -1,0 +1,35 @@
+<%- include("layout/header") -%>
+
+<center><div class="pharmacy-adddrugs">
+    <form action="/pharmacy/drugs/<%= drugs.id %>/edit?_method=PUT" method="POST">
+        <div>
+            <label for="">ادخل اسم الدواء</label>
+            <input type="text" name="name" value="<%= drugs.name %>">
+        <br>
+
+        <label for="">ادخل سعر الدواء</label>
+            <input type="number" name="price" value="<%= drugs.price%>">
+        <br>
+
+        <label for="">تاريخ انتهاء الصلاحية</label>
+            <input type="date" name="expire_Date" value="<%= drugs.expire_Date%>">
+        <br>
+
+        <label for="">كيمة الدواء</label>
+            <input type="text" name="qty" value="<%= drugs.qty %>">
+        <br>
+
+        <label for="">القسم</label>
+            <select name="category">
+            <option selected><%= drugs.category%></option>
+                <% category.forEach(data => { %>
+                  <option><%= data.name%></option>
+               <% }) %>
+            </select>
+        <br>
+        <button type="submit">تعديل معلومات الدواء</button>
+        </div>
+    </form>
+</div></center>
+
+<%- include("layout/footer") -%>

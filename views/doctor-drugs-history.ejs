@@ -1,0 +1,24 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">Drug name</th>
+      <th scope="col">Doctor name</th>
+      <th scope="col">Code</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% drugs.forEach(drug => { %>
+      <tr>
+      <th scope="row"><%= drug.name%></th>
+      <td><%= drug.doctor%></td>
+      <td><%= drug.username%></td>
+      <td><%= drug.Date%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

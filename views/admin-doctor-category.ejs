@@ -1,0 +1,24 @@
+<%- include("layout/header") -%>
+
+<center><button onclick="window.location.href='/admin/doctor-category/add'" class="pharmacy-addbtn btn btn-warning">اضافة قسم</button></center>
+
+<table class="table container pharmacy-table">
+  <thead>
+    <tr>
+      <th scope="col">اسم القسم</th>
+      <th scope="col">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% Doctor_cat.forEach(data => { %>
+    <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><form action="/admin/doctor-category/<%= data.id %>/delete?_method=DELETE" method="POST">
+          <button class="btn btn-danger">حذف</button>
+      </form></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

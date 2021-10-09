@@ -1,0 +1,52 @@
+<%- include("layout/header") -%>
+
+    <div class="info-adduser">
+        <center>
+            <form action="/info/add-user" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="">الاسم</label>
+                    <input type="text" name="name" value="">
+                    <br>
+                    <label for="">تاريخ الولادة</label>
+                    <input type="date" name="age" value="">
+                    <br>
+                    <label for="">الكود التسلسلي</label>
+                    <input type="text" id="demo" name="username">
+                    <button class="make-number" onclick="document.getElementById('demo').value = myFunction(8);"
+                        type="button">عمل كود تسلسلي</button>
+                    <br>
+                    <label for="">صيغة الدم</label>
+                    <select name="blood">
+                        <option>A+</option>
+                        <option>O+</option>
+                        <option>B+</option>
+                        <option>AB+</option>
+                        <option>A-</option>
+                        <option>O-</option>
+                        <option>B-</option>
+                        <option>AB-</option>
+                    </select>
+                    <br>
+                    <input type="file" name="image" id="image">
+                    <br>
+                    <button type="submit">أدخال المعلومات</button>
+                </div>
+            </form>
+        </center>
+    </div>
+    </div>
+
+    <script>
+        function myFunction(length) {
+            var result = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            var charactersLength = characters.length;
+            for (var i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() *
+                    charactersLength));
+            }
+            return result;
+        }
+    </script>
+
+    <%- include("layout/footer") -%>

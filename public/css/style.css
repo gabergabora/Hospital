@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+*{
+    font-family: 'Scheherazade New', serif;
+}
+
+nav{
+    background-color: #338AFF;
+}
+
+nav img{
+    width: 60px;
+}
+
+nav a{
+    font-size: 20px;
+}
+
+.register{
+    display: flex;
+}
+
+.register svg{
+    margin-top: -100px;
+    width: 700px;
+}
+
+.register form{
+    direction: rtl;
+}
+
+.register form div{
+    display: grid;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.register form label{
+    font-size: 20px;
+}
+
+.register form input{
+    width: 400px;
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    direction: rtl;
+}
+
+.register form button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.register form button:hover{
+    font-size: 25px;
+    width: 240px;
+}
+
+.login{
+    display: flex;
+}
+
+.login svg{
+    margin-top: -100px;
+    width: 700px;
+}
+
+.login form{
+    direction: rtl;
+}
+
+.login form div{
+    display: grid;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.login form label{
+    font-size: 20px;
+}
+
+.login form input{
+    width: 400px;
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    direction: rtl;
+}
+
+.login form button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.login form button:hover{
+    font-size: 25px;
+    width: 240px;
+}
+
+.adminpanel{
+    display: grid; 
+    margin-top: 80px;
+}
+
+.adminpanel button{
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: all 1000ms ease 0ms;
+}
+
+.adminpanel button:hover{
+    width: 420px;
+    font-size: 25px;
+}
+
+.info{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.info button{
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: all 1000ms ease 0ms;
+}
+
+.info button:hover{
+    width: 420px;
+    font-size: 25px;
+}
+
+.info-adduser{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-adduser form div{
+    display: grid;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.info-adduser input{
+    border-color: #338AFF;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 3px;
+}
+
+.info-adduser select{
+    direction: ltr;
+    border-color: #338AFF;
+    border-width: 3px;
+}
+
+.info-adduser form button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.info-adduser form button:hover{
+    font-size: 25px;
+    width: 240px;
+}
+
+.info-adduser .make-number{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 130px;
+}
+
+.info-adduser .make-number:hover{
+    font-size: 17px;
+    width: 150px;
+}
+
+.info-find{ 
+   margin-top: 100px;
+}
+
+.info-find input{
+    border-color: #338AFF;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 3px;
+    width: 400px;
+    outline: none;
+}
+
+.info-find button{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.info-find button:hover{
+    font-size: 25px;
+    width: 240px;
+}
+
+.info-getUser img{
+    width: 200px;
+}
+
+.pharmacy{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.pharmacy button{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.pharmacy button:hover{
+    font-size: 25px;
+    width: 525px;
+}
+
+.pharmacy-addcat form div{
+    display: grid;
+    margin-top: 200px;
+    width: 500px;
+}
+
+.pharmacy-addcat input{
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 13px;
+}
+
+.pharmacy-addcat label{
+    font-size: 25px;
+}
+
+.pharmacy-addcat button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.pharmacy-addcat button:hover{
+    width: 230px;
+    font-size: 22px;
+}
+
+.pharmacy-table{
+    font-size: 20px;
+}
+
+.pharmacy-addbtn{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pharmacy-adddrugs form div{
+    display: grid;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.pharmacy-adddrugs input{
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 13px;
+}
+
+.pharmacy-adddrugs label{
+    font-size: 20px;
+}
+
+.pharmacy-adddrugs button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.pharmacy-adddrugs button:hover{
+    width: 230px;
+    font-size: 22px;
+}
+
+.pharmacy-adddrugs select{
+    border-color: #338AFF;
+    border-width: 3px;
+    border-radius: 8px;
+}
+
+.pharmacy-filter{
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+    border-color: #338AFF;
+    border-radius: 7px;
+    outline: none;
+    background-color: #338AFF;
+    color: white;
+}
+
+.doctor-enter-code div{
+    display: grid;
+    margin-top: 180px;
+    width: 400px;
+}
+
+.doctor-enter-code input{
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 13px;
+}
+
+.doctor-enter-code label{
+    font-size: 20px;
+}
+
+.doctor-enter-code button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.doctor-enter-code button:hover{
+    width: 230px;
+    font-size: 22px;
+}
+
+.doctor-enter-code-table{
+    margin-top: 20px;
+}
+
+.doctor-user-data div{
+    display: grid;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.doctor-user-data button{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.doctor-user-data button:hover{
+    font-size: 22px;
+    width: 430px;
+}
+
+.pharmacy-enter-code div{
+    display: grid;
+    margin-top: 180px;
+    width: 400px;
+}
+
+.pharmacy-enter-code input{
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 13px;
+}
+
+.pharmacy-enter-code label{
+    font-size: 20px;
+}
+
+.pharmacy-enter-code button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.pharmacy-enter-code button:hover{
+    width: 230px;
+    font-size: 22px;
+}
+
+.lab-enter-code div{
+    display: grid;
+    margin-top: 180px;
+    width: 400px;
+}
+
+.lab-enter-code input{
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 13px;
+}
+
+.lab-enter-code label{
+    font-size: 20px;
+}
+
+.lab-enter-code button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.lab-enter-code button:hover{
+    width: 230px;
+    font-size: 22px;
+}
+
+.lab-user-data div{
+    display: grid;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.lab-user-data button{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 13px;
+    background-color: #338AFF;
+    color: wheat;
+    transition: all 1000ms ease 0ms;
+}
+
+.lab-user-data button:hover{
+    font-size: 22px;
+    width: 430px;
+}
+
+.lab{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.lab button{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.lab button:hover{
+    font-size: 25px;
+    width: 525px;
+}
+
+.doctor-lab{
+    display: grid;
+    width: 600px;
+    margin-top: 180px;
+}
+
+.doctor-lab button{
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doctor-lab textarea{
+    outline: none;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.lab-send-result{
+    width: 400px;
+}
+
+.lab-send-result-page{
+    margin-top: 40px;
+    width: 800px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+table{
+    width: 90%;
+}
+
+.admin-sec-register{
+    margin-top: 30px;
+}
+
+.admin-sec-register input{
+    width: 400px;
+    border-color: #338AFF;
+    border-radius: 12px;
+    border-width: 3px;
+    display: grid;
+}
+
+.admin-sec-register .doctor-name{
+    background-color: #dddddd;
+}
+
+.login-secretary form div{
+    margin-top: 100px;
+    display: grid;
+    width: 400px;
+}
+
+.login-secretary form label{
+    font-size: 20px;
+}
+
+.login-secretary form input{
+    width: 400px;
+    outline: none;
+    border-color: #338AFF;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.login-secretary form button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+}
+
+.login-secretary form button:hover{
+    font-size: 25px;
+    width: 240px;
+}
+
+.user-enter-code{
+    display: flex;
+}
+
+.user-enter-code svg{
+    width: 600px;
+    margin-top: -120px;
+}
+
+.user-enter-code .ENTER-DIV{
+    display: flex;
+    margin-top: 170px;
+    margin-left: 60px;
+}
+
+.user-enter-code .ENTER-DIV input{
+    width: 400px;
+    border-radius: 10px;
+    border-color: #338AFF;
+}
+
+.user-enter-code .ENTER-DIV button{
+    margin-top: 20px;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 1000ms ease 0ms;
+}
+
+.user-enter-code .ENTER-DIV button:hover{
+    font-size: 20px;
+}
+
+.user-data svg{
+    width: 600px;
+    margin-top: -130px;
+}
+
+.error p{
+    font-size: 25px;
+}
+
+.error svg{
+    margin-top: -100px;
+    width: 700px;
+}
+
+.user-data{
+    display: flex;
+}
+
+.user-data div p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.user-data span{
+    color: #338AFF;
+}
+
+.user-data div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-data div button{
+    margin-top: 40px;
+    width: 300px;
+    background-color: #338AFF;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    transition: all 1000ms ease 0ms;
+}
+
+.user-data div button:hover{
+    font-size: 20px;
+}
+
+.user-doctors-category{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-doctors-category svg{
+    width: 550px;
+    margin-top: -50px;
+}
+
+.user-doctors-category .categires{
+    margin-top: 40px;
+    direction: rtl;
+}
+
+.user-doctors-category .categires li:nth-child(1){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.user-doctors-category .categires li{
+    list-style-type: none;
+    border-style: solid;
+    width: 500px;
+    border-width: 1px;
+    border-bottom: none;
+    font-size: 20px;
+    transition: all 1000ms ease 0ms;
+    text-align: center;
+}
+
+.user-doctors-category .categires li:last-child{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-doctors-category .categires p{
+    text-align: center;
+    font-size: 25px;
+}
+
+.user-doctors-category .categires li:hover{
+    border-style: solid;
+    border-width: 1px;
+    font-size: 25px;
+    background-color: #338AFF;
+    color: white;
+}
+
+.user-submit-order {
+    display: flex;
+}
+
+.user-submit-order svg{
+    width: 600px;
+    margin-left: 20px;
+}
+
+.user-submit-order form p{
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.user-submit-order form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-submit-order button{
+    margin-top: 30px;
+}
+.user-order-done p{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.user-order-done a{
+    margin-top: -50px;
+}
+
+.user-order-done svg{
+    width: 550px;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secretary-btns{
+    display: flex;  
+    margin-top: 20px;
+    width: 400px;
+}
+
+.secretary-btns button{
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.secretary-new-order {
+    display: grid;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.secretary-new-order label{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.secretary-new-order input{
+    width: 400px;
+    border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">الفحص</th>
+      <th scope="col">اسم الطبيب</th>
+      <th scope="col">النتيجة</th>
+      <th scope="col">التاريخ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% test.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.doctor%></td>
+      <td><%= data.result%></td>
+      <td><%= data.Date%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

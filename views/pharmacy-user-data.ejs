@@ -1,0 +1,18 @@
+<%- include("layout/header") -%>
+
+<center><div class="pharmacy-enter-code">
+    <div>
+            <label for="">ادخل كود المريض</label>
+            <input type="text" id="Pharmacy-code" name="name">
+        <br>
+        <button onclick="PharmacyCode()">عرض المعلومات</button>
+</div></center>
+
+<script>
+    function PharmacyCode(){
+        var x = document.getElementById("Pharmacy-code").value
+        window.location.href = "/pharmacy/data/" + x
+    }
+</script>
+
+<%- include("layout/footer") -%>

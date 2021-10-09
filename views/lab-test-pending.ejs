@@ -1,0 +1,22 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">Test</th>
+      <th scope="col">Doctor name</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% test.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.doctor%></td>
+      <td><%= data.Date%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

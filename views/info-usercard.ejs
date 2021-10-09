@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/print.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+		function printDiv(divName){
+			var printContents = document.getElementById(divName).innerHTML;
+			var originalContents = document.body.innerHTML;
+
+			document.body.innerHTML = printContents;
+
+			window.print();
+
+			document.body.innerHTML = originalContents;
+
+		}
+	</script>
+
+    
+
+<div class="card" id='printMe'>
+  <header><center><img src="/images/logo.png" alt=""></center></header>
+  <section>
+    <img src="/upload/images/<%= data.image%>" alt="">
+      <div class="display">
+        <p>الاسم : <%= data.name%></p>
+      <p>تاريخ الولادة : <%= data.born%></p>
+      <p>الكود التسلسلي : <%= data.username%></p>
+      </div>
+  </section>
+
+  <footer>
+    s
+  </footer>
+</div>
+
+<br>
+<button onclick="printDiv('printMe')">Print only the above div</button>
+<br>
+<button onclick="window.location.href='/info/panel'">Back</button>
+    </body>
+</html>

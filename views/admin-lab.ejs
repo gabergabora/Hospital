@@ -1,0 +1,20 @@
+<%- include("layout/header") -%>
+
+<table class="doctor-enter-code-table table container">
+  <thead>
+    <tr>
+      <th scope="col">اسم الموظف</th>
+      <th scope="col">تاريخ الولادة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% lab.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.born%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

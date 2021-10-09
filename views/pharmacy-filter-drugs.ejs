@@ -1,0 +1,31 @@
+<%- include("layout/header") -%>
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">الاسم</th>
+      <th scope="col">السعر</th>
+      <th scope="col">الكمية</th>
+      <th scope="col">القسم</th>
+      <th scope="col">تاريخ انتهاء الصلاحية</th>
+      <th scope="col">تعديل</th>
+      <th scope="col">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% drugs.forEach(data => { %>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td>$<%= data.price%></td>
+      <td><%= data.qty%></td>
+      <td><%= data.category%></td>
+      <td><%= data.expire_Date%></td>
+      <td><button onclick="window.location.href='/pharmacy/drugs/<%= data.id %>/edit'" class="btn btn-success">تعديل</button></td>
+      <td><form action="/pharmacy/drugs/<%= data.id %>/delete?_method=DELETE" method="POST">
+          <button class="btn btn-danger">حذف</button>
+      </form></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

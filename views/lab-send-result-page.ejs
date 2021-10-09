@@ -1,0 +1,30 @@
+<%- include("layout/header") -%>
+
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">Test</th>
+      <th scope="col">Doctor name</th>
+      <th scope="col">result</th>
+      <th scope="col">Done</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><%= data.doctor%></td>
+      <td><%= data.result%></td>
+      <td><button class="btn btn-success">Send result</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<center>
+<form action="/lab/data/<%= data.username%>/result/<%= data.id%>?_method=PUT" method="POST">
+    <textarea name="result" placeholder="Write the result here..." class="lab-send-result-page" rows="" cols=""></textarea>
+    <br>
+    <button class="btn btn-success">ارسال</button>
+</form>
+</center>
+
+<%- include("layout/footer") -%>

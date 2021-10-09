@@ -1,0 +1,22 @@
+<%- include("layout/header") -%>
+
+<div class="info-find">
+<center>
+    <label for="">قم بادخال اسم المريض</label>
+    <br>
+<input type="" id="name" name="">
+
+<br>
+<button onclick="myFname()">بحث</button>
+<center>
+</div>
+
+<script>
+    function myFname(){
+        var x = document.getElementById("name").value
+        
+        window.location.href = "/info/find/" + x.replace(" ", "-")
+    }
+</script>
+
+<%- include("layout/footer") -%>

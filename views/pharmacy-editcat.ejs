@@ -1,0 +1,14 @@
+<%- include("layout/header") -%>
+
+<center><div class="pharmacy-addcat">
+    <form action="/pharmacy/category/<%= data.id%>/edit?_method=PUT" method="POST">
+        <div>
+            <label for="">ادخل اسم القسم</label>
+            <input type="text" name="name" value="<%= data.name%>">
+        <br>
+        <button type="submit">تعديل</button>
+        </div>
+    </form>
+</div></center>
+
+<%- include("layout/footer") -%>

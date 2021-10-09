@@ -1,0 +1,33 @@
+<%- include("layout/header") -%>
+
+    <div class="info-adduser">
+        <center>
+            <form action="/users/<%= data.id%>/edit?_method=PUT" method="POST">
+                <div>
+                    <label for="">الاسم</label>
+                    <input type="text" name="name" value="<%= data.name%>">
+                    <br>
+                    <label for="">تاريخ الولادة</label>
+                    <input type="date" name="age" value="<%= data.born%>">
+                    <br>
+                    <label for="">صيغة الدم</label>
+                    <select name="blood">
+                    <option selected><%= data.blood_type%></option>
+                        <option>A+</option>
+                        <option>O+</option>
+                        <option>B+</option>
+                        <option>AB+</option>
+                        <option>A-</option>
+                        <option>O-</option>
+                        <option>B-</option>
+                        <option>AB-</option>
+                    </select>
+                    <br>
+                    <button type="submit">أدخال المعلومات</button>
+                </div>
+            </form>
+        </center>
+    </div>
+    </div>
+
+    <%- include("layout/footer") -%>

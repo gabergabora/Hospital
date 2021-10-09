@@ -1,0 +1,28 @@
+<%- include("layout/header") -%>
+
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">الاسم</th>
+      <th scope="col">الكود التسلسلي</th>
+      <th scope="col">تعديل</th>
+      <th scope="col">اصدار بطاقة</th>
+      <th scope="col">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach(data =>{ %>
+      <tr>
+      <th scope="row"><%= data.name %></th>
+      <td><%= data.username%></td>
+      <td><button onclick="window.location.href='/info/users/<%= data.id%>/edit'" class="btn btn-success">تعديل</button></td>
+      <td><button class="btn btn-primary" onclick="window.location.href='/info/usercard/<%= data.id%>'">اصدار بطاقة</button></td>
+      <td><form action="/users/<%= data.id%>/delete?_method=DELETE" method="POST">
+          <button class="btn btn-danger" type="submit">حذف</button>
+      </form></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

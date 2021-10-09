@@ -1,0 +1,24 @@
+<%- include("layout/header") -%>
+
+<table class="table container info-getUser">
+  <thead>
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">ID</th>
+      <th scope="col">Born</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% getUser.forEach(data => { %>
+      <tr>
+      <th scope="row"><img src="/upload/images/<%= data.image%>" alt=""></th>
+      <td><%= data.name%></td>
+      <td><%= data.username%></td>
+      <td><%= data.born%></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>

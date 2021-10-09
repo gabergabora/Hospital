@@ -1,0 +1,26 @@
+<%- include("layout/header") -%>
+
+<center><button onclick="window.location.href='/pharmacy/category/addcat'" class="pharmacy-addbtn btn btn-warning">اضافة قسم</button></center>
+
+<table class="table container pharmacy-table">
+  <thead>
+    <tr>
+      <th scope="col">اسم القسم</th>
+      <th scope="col">تعديل</th>
+      <th scope="col">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% drugs_cat.forEach(data => { %>
+    <tr>
+      <th scope="row"><%= data.name%></th>
+      <td><button class="btn btn-success" onclick="window.location.href='/pharmacy/category/<%= data.id %>/edit'">تعديل</button></td>
+      <td><form action="/pharmacy/category/<%= data.id %>/delete?_method=DELETE" method="POST">
+          <button class="btn btn-danger">حذف</button>
+      </form></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include("layout/footer") -%>
